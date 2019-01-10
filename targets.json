@@ -1,0 +1,34 @@
+[
+  {
+    "targets": [ "10.217.129.186:9100"],
+    "labels": {
+      "env": "prod",
+      "job": "node_exporter",
+      "service": "awx"
+    }
+  },
+  {
+    "targets": [ "10.217.129.30:9100", "10.217.131.30:9100" ],
+    "labels": {
+      "env": "prod",
+      "job": "node_exporter",
+      "service": "idm"
+    }
+  },
+  {
+    "targets": [ "10.217.129.232:9100", "10.217.131.232:9100" ],
+    "labels": {
+      "env": "prod",
+      "job": "node_exporter",
+      "service": "monitoring"
+    }
+  },
+  {
+    "targets": [ "10.217.180.125:9100" ],
+    "labels": {
+      "env": "prod",
+      "job": "node_exporter",
+      "service": "wiki"
+    }
+  }
+]
