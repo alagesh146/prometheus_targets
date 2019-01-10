@@ -1,0 +1,6 @@
+Targets,env,job,service
+"10.217.129.186:9100","prod","node_exporter","awx"
+"10.217.129.30:100","prod","node_exporter","idm"
+"10.217.131.30:100","prod","node_exporter","idm"
+"10.217.129.232:9100","prod","node_exporter","monitoring"
+"10.217.131.232:9100","prod","node_exporter","monitoring"
