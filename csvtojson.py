@@ -1,4 +1,8 @@
 #!/usr/bin/python
+
+__author__ = "Nano"
+__version__ = "1.0"
+
 import csv
 import json
 
