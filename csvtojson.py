@@ -40,3 +40,6 @@ with open("node_exporter.csv", "rb") as nodeexfile:
 
 for dictrow in targetarray:
     print(json.dumps(dictrow))
+
+with open('new_targets.json', 'wb') as outfile:
+    json.dump(targetarray, outfile)

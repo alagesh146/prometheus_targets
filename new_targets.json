@@ -1,0 +1,1 @@
+[{"labels": {"job": "node_exporter", "service": "awx", "env": "prod"}, "targets": ["10.217.129.186:9100"]}, {"labels": {"job": "node_exporter", "service": "idm", "env": "prod"}, "targets": ["10.217.129.30:100", "10.217.131.30:100"]}, {"labels": {"job": "node_exporter", "service": "monitoring", "env": "prod"}, "targets": ["10.217.129.232:9100", "10.217.131.232:9100"]}]
