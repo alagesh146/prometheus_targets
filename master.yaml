@@ -43,6 +43,15 @@
       
   - name: Run a script with arguments
     shell: cd /tmp && python csvtojson.py
+    
+    
+  - name: Copy a new "ntp.conf file into place, backing up the original if it differs from the copied version
+    copy:
+      src: /tmp/targets.json
+      dest: /etc/prometheus/targets.json
+      owner: prometheus
+      group: prometheus
+      backup: yes
    
   
  #   shell: cp /tmp/node_exporter-0.17.0.linux-amd64/node_exporter /usr/local/sbin/
