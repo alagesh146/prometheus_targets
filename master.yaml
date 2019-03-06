@@ -49,6 +49,7 @@
     copy:
       src: /tmp/targets.json
       dest: /etc/prometheus/targets.json
+      remote_src: yes
       owner: prometheus
       group: prometheus
       backup: yes
