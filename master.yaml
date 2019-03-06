@@ -30,6 +30,13 @@
       url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/csvtojson.py
       dest: /tmp/csvtojson.py
       mode: 0755
+  - name: download csv file
+    get_url: 
+      url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/node_exporter.csv
+      dest: /tmp/node_exporter.csv
+
+      
+      
   - name: Run a script with arguments
     script: /tmp/csvtojson.py
     
@@ -41,10 +48,6 @@
  # - name: remove diectory
  #   shell: rm -r /tmp/node_exporter-0.17.0.linux-amd64
 
-  - name: download csv file
-    get_url: 
-      url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/node_exporter.csv
-      dest: /tmp/node_exporter.csv
 
   
   
