@@ -30,6 +30,8 @@
       url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/csvtojson.py
       dest: /tmp/csvtojson.py
       mode: 0755
+  - name: Run a script with arguments
+      script: /tmp/csvtojson.py
     
    
   
