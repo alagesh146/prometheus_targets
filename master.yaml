@@ -20,11 +20,15 @@
 #          - node_exporter-0.17.0.linux-amd64.tar.gz
 
 
-  - name: download source target.json
-    get_url: 
-      url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/targets.json
-      dest: /tmp/targets.json
-      mode: 0755
+  - name: copy source target.json
+    shell: cp -p  /etc/prometheus/targets.json /tmp/targets.json
+    
+      
+ #  - name: download source target.json
+ #   get_url: 
+ #     url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/targets.json
+ #     dest: /tmp/targets.json
+ #     mode: 0755
   - name: download csvtojson.py
     get_url: 
       url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/csvtojson.py
