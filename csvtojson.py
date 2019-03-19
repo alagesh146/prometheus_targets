@@ -40,13 +40,13 @@ with open("node_exporter.csv", "rb") as nodeexfile:
                              if element['labels']['action'] == row[5]:
 
 
-                        new_target = 1
+                                new_target = 1
 
-                        if row[0] not in element['targets']:
+                                if row[0] not in element['targets']:
 
-                            element["labels"] = {'env': row[1], 'businessUnit': row[2], 'service': row[3], 'os': row[4], 'action': row[5] }
+                                   element["labels"] = {'env': row[1], 'businessUnit': row[2], 'service': row[3], 'os': row[4], 'action': row[5] }
 
-                            element['targets'].append(row[0])
+                                   element['targets'].append(row[0])
 
                     else:
 
