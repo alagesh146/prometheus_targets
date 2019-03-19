@@ -9,9 +9,12 @@
      path: /tmp/ansible
      state: directory
      mode: 0755
+  
+  - name: clear old files
+    shell: rm -rf /tmp/ansible/*
     
   - name: copy source target.json
-    shell: cp -p  /etc/prometheus/targets.json /tmp/targets.json
+    shell: cp -p  /etc/prometheus/targets.json /tmp/ansible/targets.json
     
       
  #  - name: download source target.json
@@ -22,22 +25,22 @@
   - name: download csvtojson.py
     get_url: 
       url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/csvtojson.py
-      dest: /tmp/csvtojson.py
+      dest: /tmp/ansible/csvtojson.py
       mode: 0755
   - name: download csv file
     get_url: 
       url: https://raw.githubusercontent.com/alagesh146/prometheus_targets/master/node_exporter.csv
-      dest: /tmp/node_exporter.csv
+      dest: /tmp/ansible/node_exporter.csv
 
       
       
   - name: Run a script with arguments
-    shell: cd /tmp && python csvtojson.py
+    shell: cd /tmp/ansible && python csvtojson.py
     
     
   - name: Copy a new "ntp.conf file into place, backing up the original if it differs from the copied version
     copy:
-      src: /tmp/targets.json
+      src: /tmp/ansible/targets.json
       dest: /etc/prometheus/targets.json
       remote_src: yes
       owner: prometheus
@@ -45,21 +48,7 @@
       backup: yes
    
   
- #   shell: cp /tmp/node_exporter-0.17.0.linux-amd64/node_exporter /usr/local/sbin/
- # - name: remove tar files
- #   shell: rm -f /tmp/node_exporter-0.17.0.linux-amd64.tar.gz*
- # - name: remove diectory
- #   shell: rm -r /tmp/node_exporter-0.17.0.linux-amd64
 
-
-  
-  
-  
-  
-#    shell: cd /tmp/ && wget https://raw.githubusercontent.com/alagesh146/Node-exporter/master/node-exporter.service
-#  - name: move systemd startup file to systemd folder
-#    shell: mv /tmp/node-exporter.service /etc/systemd/system/
-#  - name: remove temp files
 
     
 
