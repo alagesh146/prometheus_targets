@@ -16,14 +16,6 @@
     }
   },
   {
-    "targets": [ "10.217.129.232:9100", "10.217.131.232:9100" ],
-    "labels": {
-      "env": "prod",
-      "job": "node_exporter",
-      "service": "monitoring"
-    }
-  },
-  {
     "targets": [ "10.217.180.125:9100" ],
     "labels": {
       "env": "prod",
