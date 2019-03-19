@@ -31,15 +31,20 @@ with open("node_exporter.csv", "rb") as nodeexfile:
 
                 new_target = 1
 
-                if element['labels']['job'] == row[2]:
+                if element['labels']['businessUnit'] == row[2]:
 
                     if element['labels']['service'] == row[3]:
+                        
+                        if element['labels']['os'] == row[4]:
+                            
+                             if element['labels']['action'] == row[5]:
+
 
                         new_target = 1
 
                         if row[0] not in element['targets']:
 
-                            element["labels"] = {'env': row[1], 'job': row[2], 'service': row[3]}
+                            element["labels"] = {'env': row[1], 'businessUnit': row[2], 'service': row[3], 'os': row[4], 'action': row[5] }
 
                             element['targets'].append(row[0])
 
@@ -55,7 +60,7 @@ with open("node_exporter.csv", "rb") as nodeexfile:
 
         if new_target == 0:
 
-            new_element["labels"] = {'env': row[1], 'job': row[2], 'service': row[3]}
+            new_element["labels"] = {'env': row[1], 'businessUnit': row[2], 'service': row[3], 'os': row[4], 'action': row[5]}
 
             if 'targets' not in new_element['labels']:
 
