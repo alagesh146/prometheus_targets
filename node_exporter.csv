@@ -54,3 +54,10 @@ A01E01SDCPAW002:9182,pre-prod,SDT_PRE_PROD,ppd01-win,WINDOWS,Notify STG
 10.217.129.235:9100,prod,GROUPIT_PROD,Prometheus-Stage,LINUX,Notify GroupIT - Cloud Infra
 10.217.131.59:9182,prod,GROUPIT_PROD,bigfix,WINDOWS,Notify GroupIT - Cloud Infra
 10.217.131.62:9182,prod,GROUPIT_PROD,bigfix,WINDOWS,Notify GroupIT - Cloud Infra
+euw1-prd-l-ns01:9119,prod,GROUPIT_PROD,bind-dns,LINUX,Notify GroupIT - Cloud Infra
+euw1-prd-l-ns02:9119,prod,GROUPIT_PROD,bind-dns,LINUX,Notify GroupIT - Cloud Infra
+euw1-prd-l-nspub01:9119,prod,GROUPIT_PROD,bind-dns,LINUX,Notify GroupIT - Cloud Infra
+euw1-prd-l-nspub02:9119,prod,GROUPIT_PROD,bind-dns,LINUX,Notify GroupIT - Cloud Infra
+euw1ss1wi-dc01:9182,prod,GROUPIT_PROD,ad-dns,WINDOWS,Notify GroupIT - Cloud Infra
+euw1ss1wi-dc02:9182,prod,GROUPIT_PROD,ad-dns,WINDOWS,Notify GroupIT - Cloud Infra
+10.217.129.182:9100,prod,GROUPIT_PROD,Ansible-Tower,LINUX,Notify GroupIT - Cloud Infra
