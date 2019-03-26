@@ -57,3 +57,5 @@ A01E01SDCPAW002:9182,pre-prod,SDT_PRE_PROD,ppd01-win,WINDOWS,Notify STG
 euw1ss1wi-dc01:9182,prod,GROUPIT_PROD,ad-dns,WINDOWS,Notify GroupIT - Cloud Infra
 euw1ss1wi-dc02:9182,prod,GROUPIT_PROD,ad-dns,WINDOWS,Notify GroupIT - Cloud Infra
 10.217.129.182:9100,prod,GROUPIT_PROD,Ansible-Tower,LINUX,Notify GroupIT - Cloud Infra
+10.217.181.240:9100,prod,FLYSURFER_PROD,wordpress-webserver1,LINUX,Notify GroupIT - Cloud Infra
+10.217.183.149:9100,prod,FLYSURFER_PROD,wordpress-webserver2,LINUX,Notify GroupIT - Cloud Infra
