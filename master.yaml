@@ -38,7 +38,7 @@
     shell: cd /tmp/ansible && python csvtojson.py
     
     
-  - name: Copy a new "ntp.conf file into place, backing up the original if it differs from the copied version
+  - name: Copy a new targets file into place, backing up the original if it differs from the copied version
     copy:
       src: /tmp/ansible/targets.json
       dest: /etc/prometheus/targets.json
