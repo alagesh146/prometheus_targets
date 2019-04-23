@@ -1,4 +1,4 @@
-Targets,env,businessUnit,service,os,action
+Targets,env,businessUnit,service,os,action,businessImpact
 A01E01SDCPAW003:9182,pre-prod,SDT_PRE_PROD,ppd1-win,WINDOWS,Notify SDT,NA
 A01E01SDCPAW004:9182,pre-prod,SDT_PRE_PROD,ppd1-win,WINDOWS,Notify SDT,NA
 A01E01SDCPDL001:9100,pre-prod,SDT_PRE_PROD,ppd1-linux,LINUX,Notify SDT,NA
