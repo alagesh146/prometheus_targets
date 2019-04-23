@@ -61,7 +61,7 @@ with open("node_exporter.csv", "rb") as nodeexfile:
 
         if new_target == 0:
 
-            new_element["labels"] = {'env': row[1], 'businessUnit': row[2], 'service': row[3], 'os': row[4], 'action': row[5]}, 'businessImpact': row[6]}
+            new_element["labels"] = {'env': row[1], 'businessUnit': row[2], 'service': row[3], 'os': row[4], 'action': row[5], 'businessImpact': row[6]}
 
             if 'targets' not in new_element['labels']:
 
