@@ -1,3 +1,3 @@
 Targets,env,businessUnit,service,os,action,businessImpact
-euw1ss1wi-dc01:9182,prod,GROUPIT_PROD,Active Directory-DNS-Colo,WINDOWS,Notify GroupIT - Cloud Infra, servers in Colo cannot reach DC
-euw1ss1wi-dc02:9182,prod,GROUPIT_PROD,Active Directory-DNS-Colo,WINDOWS,Notify GroupIT - Cloud Infra, servers in Colo cannot reach DC
+lo1-prd-w-dc01:9182,prod,GROUPIT_PROD,Active Directory-DNS-Colo,WINDOWS,Notify GroupIT - Cloud Infra, servers in Colo cannot reach DC
+lo1-prd-w-dc02:9182,prod,GROUPIT_PROD,Active Directory-DNS-Colo,WINDOWS,Notify GroupIT - Cloud Infra, servers in Colo cannot reach DC
